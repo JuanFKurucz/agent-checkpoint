@@ -1,0 +1,12 @@
+# Template only. Replace every REPLACE_* path before enabling locally.
+# Use a separately validated, noneditable installation, never editable candidate code.
+[mcp_servers.checkpoint]
+command = 'C:/REPLACE_PINNED_INSTALL/venv/Scripts/python.exe'
+args = ['-I', '-m', 'agent_checkpoint', '--root', 'C:/REPLACE_REPO', '--config', 'C:/REPLACE_REPO/checkpoint.json', '--state', 'C:/REPLACE_EXTERNAL_STATE', 'mcp', '--stdio']
+cwd = 'C:/REPLACE_REPO'
+enabled = false
+required = false
+startup_timeout_sec = 30
+tool_timeout_sec = 600
+env_vars = ['PATH', 'PATHEXT', 'SYSTEMROOT', 'WINDIR', 'TEMP', 'TMP', 'LANG', 'UV_CACHE_DIR']
+enabled_tools = ['checkpoint_start_task', 'checkpoint_route', 'checkpoint_run_checks', 'checkpoint_review', 'checkpoint_completion']

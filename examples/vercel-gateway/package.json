@@ -1,0 +1,16 @@
+{
+  "name": "agent-checkpoint-gateway-smoke",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ai": "7.0.118"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.3",
+    "typescript": "7.0.2"
+  }
+}
