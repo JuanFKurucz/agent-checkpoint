@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "candidate_version": "0.1.1",
+  "candidate_directory": "C:/Users/juanf/AppData/Local/agent-checkpoint/self-use/candidate-0.1.1",
+  "wheel_sha256": "8b4d2db9a124117a6e91e6b1248c16481f6d57d65934af0cd2114bf16bb7b33e",
+  "source_sha256": "265e0e1fb13eb0b8179b4209a16dc7ecea70bb8aa2cd843ea1cbbae406322018",
+  "uv_lock_sha256": "c4871d2f351528ebc2ebc9c2ca4135afb95a83064be56d30232b95f94ad0a288",
+  "baseline_wheel_sha256_rechecked": "83114bf8ca716c0183d31667fa9e3c6b4184e9c50ea6dffbdce72e8d40087637",
+  "source_archive_files_compared_after_validation": 90,
+  "changed_source_archive_files": [],
+  "runtime_python_files_compared_archive_wheel_current_checkout": 13,
+  "runtime_mismatches": [],
+  "installed_runtime_python_files_verified_against_wheel": 13,
+  "direct_checkout_tests": {"passed": 89, "seconds": 127.00},
+  "isolated_archive_tests": {"passed": 89, "seconds": 137.92},
+  "disabled_broken_runtime_direct_tests": {"passed": 24, "seconds": 27.02},
+  "lint": "pass",
+  "format": "pass, 27 current Python files",
+  "types": "pass, 13 runtime files",
+  "validation_helpers_outside_frozen_archive": {
+    "scripts/promotion_drill.py": "f10a09ac7b824451c3470d7d9665ce8dc81557ed2afcf20cf8cab8200b0c9293",
+    "scripts/installed_smoke.py": "afcf78218dd0f72fe22f27c31a7c4e2bdc18a53e6801e9fb7c0c376ec0e4c44b"
+  },
+  "archived_measurement_helper": {
+    "scripts/measure_scenarios.py": "06f151eb230fa9c7de30bef814ae492240f4e0ff3c782c7d2aa3e9cbbcc3f5a6"
+  },
+  "active_state_promoted": false,
+  "promotion_scope": "disposable launcher and consistent copied state only",
+  "source_commit": null,
+  "source_commit_reason": "repository has no commits",
+  "live_provider_calls_during_candidate_validation": 0,
+  "native_host_mcp_verified": false,
+  "live_python_jev_verified": false
+}
