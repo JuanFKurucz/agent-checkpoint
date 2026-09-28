@@ -1,0 +1,26 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.env
+.env.*
+artifacts/local/
+node_modules/
+
+# Active host configuration is local; publish templates, not this installation.
+/.codex/config.toml
+/checkpoint.json
+/scripts/checkpoint.ps1
+/scripts/checkpoint-launch.mjs
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
