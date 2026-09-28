@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "failed",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "init",
+        "--quiet",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1\\source\\agent_checkpoint-0.1.1"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.13501579999865498,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "sync",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 1,
+      "expected_exit": 0,
+      "seconds": 0.26928029999908176,
+      "stdout": "",
+      "stderr": "Using CPython 3.13.11\nCreating virtual environment at: .venv\nResolved 50 packages in 2ms\n  \u00c3\u2014 Failed to download `mypy==2.3.1`\n  \u00e2\u2022\u00b0\u00e2\u201d\u20ac\u00e2\u2013\u00b6 Network connectivity is disabled, but the\n      requested data wasn't found in the cache for:\n      `https://files.pythonhosted.org/packages/70/4e/d77daab008bbc4e5001374d7928f4a260d28f0e6747af444fc4763f7a310/mypy-2.3.1-cp313-cp313-win_amd64.whl`\n  help: `mypy` (v2.3.1) was included because `agent-checkpoint:dev` (v0.1.1)\n        depends on `mypy`\n"
+    }
+  ],
+  "active_state_modified": false,
+  "real_launcher_modified": false,
+  "promotion_gate": "independent direct checks and installed-file hashes",
+  "candidate_ready_used_as_gate": false,
+  "wheel_sha256": "8b4d2db9a124117a6e91e6b1248c16481f6d57d65934af0cd2114bf16bb7b33e",
+  "source_sha256": "265e0e1fb13eb0b8179b4209a16dc7ecea70bb8aa2cd843ea1cbbae406322018",
+  "isolated_source": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1\\source\\agent_checkpoint-0.1.1",
+  "error_type": "RuntimeError"
+}

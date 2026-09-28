@@ -1,0 +1,57 @@
+{
+  "schema_version": "1",
+  "date": "2026-09-27",
+  "installed_build": {
+    "version": "0.1.0",
+    "wheel_sha256": "83114bf8ca716c0183d31667fa9e3c6b4184e9c50ea6dffbdce72e8d40087637",
+    "sdist_sha256": "3bbbd501bf2e649c38b29d2b97d2aa42e72033573ceda5127e85d3bc8d51de81",
+    "directory": "C:/Users/juanf/AppData/Local/agent-checkpoint/self-use/build-83114bf8",
+    "installation": "noneditable wheel in separate venv, locked dependencies installed offline",
+    "source_commit": null,
+    "source_commit_reason": "unborn repository; source distribution hash identifies packaged input",
+    "changed_during_self_use": false
+  },
+  "active_state": "C:/Users/juanf/AppData/Local/agent-checkpoint/self-use/active-state",
+  "candidate_state": "disposable pytest temporary directories",
+  "policy_digest": "87e70fe88fcfeae54f9832157ac9341fd1690d5af2edbd2ed4564ec1d543f0c9",
+  "remote_requests": 0,
+  "coding_agent_token_usage": null,
+  "coding_agent_cost_usd": null,
+  "shadow": {
+    "task_id": "9f8941309f492a5bcea4818e78b22d04",
+    "status": "ready",
+    "report_snapshot": "4d91e88c36c4c5abca7287bca8c133f81ae0ea9d52f40d0e3a7b2e95d40d0286",
+    "direct_preinstall_tests": {"passed": 77, "seconds": 59.62},
+    "check_run_seconds": {"lint": 2.4340312, "format": 1.8916771, "types": 2.9562835, "tests": 63.0132288}
+  },
+  "follow_up_tasks": [
+    {
+      "task_id": "b815f3c9f197edfcf8b324ba8d08715a",
+      "change": "Filter current advisory findings by contract revision, snapshot and generation",
+      "route": ["repository-invariants", "backend-testing"],
+      "attempts": [
+        {"request_id": "task-1-red", "test_status": "fail", "tests_failed": 2, "tests_passed": 77, "test_seconds": 67.56, "runner_seconds": 70.4501428, "completion": "needs_changes"},
+        {"direct_targeted_tests": 3, "seconds": 10.34, "status": "pass"},
+        {"request_id": "task-1-green", "all_checks": "pass", "tests_passed": 80, "test_seconds": 76.49, "runner_seconds": 79.5303489, "completion": "ready"}
+      ],
+      "ready_snapshot": "6d1d1b5e731f126c8f11255a97f963e8cce928a9a500e980737cf4606d29dc90"
+    },
+    {
+      "task_id": "573bdefdea3467f9ad4b3e8cae766fbc",
+      "change": "Bound gateway response buffering and guarantee stream cleanup",
+      "route": ["repository-invariants", "backend-testing"],
+      "attempts": [
+        {"direct_targeted_tests_failed": 2, "direct_targeted_tests_passed": 1, "seconds": 1.32, "completion": "unresolved", "note": "Direct failures were not imported as trusted Checkpoint evidence"},
+        {"direct_gateway_tests": 14, "seconds": 2.27, "status": "pass"},
+        {"request_id": "task-2-green", "all_checks": "pass", "tests_passed": 83, "test_seconds": 75.27, "runner_seconds": 78.2489221, "completion": "ready"}
+      ],
+      "ready_snapshot": "e323d0513d652302dbbd48d3c675aaf85f35d68518005fd4a1310da7a85f9c71"
+    }
+  ],
+  "limitations": [
+    "Historical reports describe the exact inputs when published; subsequent source/document edits invalidate currentness",
+    "These self-development tasks are not a controlled three-scenario baseline comparison",
+    "No general speed, cost or success-rate improvement is established",
+    "Candidate changes remain unpromoted; N remains installed unchanged"
+  ]
+}

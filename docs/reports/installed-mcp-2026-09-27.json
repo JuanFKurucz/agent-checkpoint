@@ -1,0 +1,247 @@
+{
+  "python": "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+  "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-installed-mcp-5vfifs2n",
+  "status": "pass",
+  "calls": [
+    {
+      "name": "checkpoint_start_task",
+      "result": {
+        "schema_version": "1",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "worktree_id": "8f21001a61cdafea9f1ac203f581a162ba95d68f6124398e28f4d165219f0167",
+        "request": "Verify synthetic behavior",
+        "contract_revision": 1,
+        "criteria": [
+          {
+            "id": "a",
+            "text": "Verified",
+            "origin": "user",
+            "required": true,
+            "evidence_policy": "mechanical",
+            "satisfaction_rule": "approved_checks",
+            "check_ids": [
+              "test"
+            ]
+          }
+        ],
+        "required_check_ids": [
+          "test"
+        ],
+        "scope_exclude": [],
+        "policy_digest": "f41e8540646af42ad21df3a18eace07a600fc8d359fee805c304b450b8d15f06"
+      }
+    },
+    {
+      "name": "checkpoint_completion",
+      "result": {
+        "schema_version": "1",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "contract_revision": 1,
+        "snapshot_id": "07b9ae242c2b57d53f4260feee622b26df8a22b96012df7bc1abb094b33c8369",
+        "status": "unresolved",
+        "criteria": [
+          {
+            "id": "a",
+            "status": "unknown",
+            "evidence_ids": [],
+            "reason": ""
+          }
+        ],
+        "required_checks": [
+          {
+            "id": "test",
+            "status": "unknown",
+            "evidence_ids": [],
+            "reason": ""
+          }
+        ],
+        "automatic_continuation_eligible": false,
+        "advisory_findings": [],
+        "next_actions": [
+          {
+            "type": "inspect_required_evidence",
+            "task_id": "ab66e04033e7902739d1430166ff9ce3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "checkpoint_route",
+      "result": {
+        "schema_version": "1",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "contract_revision": 1,
+        "decision_id": "96dc7329-1433-437d-8ff3-cbdbc15c13bb",
+        "selected": [
+          "safety"
+        ],
+        "mandatory": [
+          "safety"
+        ],
+        "reason": "NO_MATCH",
+        "status": "selected",
+        "source": "local",
+        "usage": {
+          "physical_requests": 0
+        }
+      }
+    },
+    {
+      "name": "checkpoint_review",
+      "result": {
+        "schema_version": "1",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "contract_revision": 1,
+        "snapshot_id": "07b9ae242c2b57d53f4260feee622b26df8a22b96012df7bc1abb094b33c8369",
+        "generation": "85e19b5a7a9ac944e223090399de40b254a5682edbc0160aa83b7983e1e53b6f",
+        "findings": [
+          {
+            "criterion_id": "a",
+            "authority": "semantic_advisory",
+            "schema_version": "1",
+            "decision_id": "fb092ed1-917b-4e42-baaf-c558b2054cd8",
+            "status": "unavailable",
+            "selected": null,
+            "reason": "PROVIDER_DISABLED",
+            "requested_model": "typesafe-ai/jev",
+            "returned_model": null,
+            "identity_verified": false,
+            "identity_note": "Gateway alias does not attest an exact Jev weights/version pin",
+            "physical_requests": 0,
+            "input_tokens": null,
+            "output_tokens": null,
+            "billed_usd": null,
+            "confidence": null,
+            "duration_seconds": 0
+          }
+        ],
+        "status": "unavailable",
+        "reason": "PROVIDER_DISABLED"
+      }
+    },
+    {
+      "name": "checkpoint_run_checks",
+      "result": {
+        "status": "completed",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "runs": [
+          {
+            "run_id": "7fec591c-2e1a-46c5-a14e-64806d01020c",
+            "check_id": "test",
+            "contract_revision": 1,
+            "phase": "finished",
+            "status": "pass",
+            "reason": "",
+            "snapshot_id": "dd0d16b3d569a1063a0a4260e8db0b44e942538a0c3258a13cfbfcba71c06855",
+            "generation": "85e19b5a7a9ac944e223090399de40b254a5682edbc0160aa83b7983e1e53b6f",
+            "output_digest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "definition_digest": "6849879dcb6bc38195db69279ed151f8f3162132787665b104ea178833dbbb84",
+            "exit_code": 0,
+            "duration_seconds": 1.4211406000031275,
+            "execution_mode": "working_tree"
+          }
+        ]
+      }
+    },
+    {
+      "name": "checkpoint_completion",
+      "result": {
+        "schema_version": "1",
+        "task_id": "ab66e04033e7902739d1430166ff9ce3",
+        "contract_revision": 1,
+        "snapshot_id": "07b9ae242c2b57d53f4260feee622b26df8a22b96012df7bc1abb094b33c8369",
+        "status": "ready",
+        "criteria": [
+          {
+            "id": "a",
+            "status": "pass",
+            "evidence_ids": [
+              "7fec591c-2e1a-46c5-a14e-64806d01020c"
+            ],
+            "reason": ""
+          }
+        ],
+        "required_checks": [
+          {
+            "id": "test",
+            "status": "pass",
+            "evidence_ids": [
+              "7fec591c-2e1a-46c5-a14e-64806d01020c"
+            ],
+            "reason": ""
+          }
+        ],
+        "automatic_continuation_eligible": false,
+        "advisory_findings": [
+          {
+            "contract_revision": 1,
+            "findings": [
+              {
+                "authority": "semantic_advisory",
+                "billed_usd": null,
+                "confidence": null,
+                "criterion_id": "a",
+                "decision_id": "fb092ed1-917b-4e42-baaf-c558b2054cd8",
+                "duration_seconds": 0,
+                "identity_note": "Gateway alias does not attest an exact Jev weights/version pin",
+                "identity_verified": false,
+                "input_tokens": null,
+                "output_tokens": null,
+                "physical_requests": 0,
+                "reason": "PROVIDER_DISABLED",
+                "requested_model": "typesafe-ai/jev",
+                "returned_model": null,
+                "schema_version": "1",
+                "selected": null,
+                "status": "unavailable"
+              }
+            ],
+            "generation": "85e19b5a7a9ac944e223090399de40b254a5682edbc0160aa83b7983e1e53b6f",
+            "reason": "PROVIDER_DISABLED",
+            "schema_version": "1",
+            "snapshot_id": "07b9ae242c2b57d53f4260feee622b26df8a22b96012df7bc1abb094b33c8369",
+            "status": "unavailable",
+            "task_id": "ab66e04033e7902739d1430166ff9ce3"
+          }
+        ],
+        "next_actions": []
+      }
+    }
+  ],
+  "native_host_test": false,
+  "provider_requests": 0,
+  "initialize": {
+    "meta": null,
+    "protocol_version": "2025-11-25",
+    "capabilities": {
+      "experimental": {},
+      "logging": null,
+      "prompts": null,
+      "resources": null,
+      "tools": {
+        "list_changed": false
+      },
+      "completions": null,
+      "extensions": null,
+      "tasks": null
+    },
+    "server_info": {
+      "name": "agent-checkpoint",
+      "title": null,
+      "version": "0.1.1",
+      "description": null,
+      "website_url": null,
+      "icons": null
+    },
+    "instructions": null
+  },
+  "listed_tools": [
+    "checkpoint_start_task",
+    "checkpoint_route",
+    "checkpoint_run_checks",
+    "checkpoint_review",
+    "checkpoint_completion"
+  ],
+  "invalid_request_rejected": true,
+  "seconds": 9.058609399999114
+}

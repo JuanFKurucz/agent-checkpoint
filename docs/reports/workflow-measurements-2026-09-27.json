@@ -1,0 +1,1861 @@
+{
+  "schema_version": 1,
+  "kind": "descriptive_fixed_order_workflow_microbenchmark",
+  "fixture_root": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f",
+  "python": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+  "repetitions_per_condition_per_scenario": 3,
+  "setup_time_included": false,
+  "baseline_first": true,
+  "results": [
+    {
+      "condition": "baseline",
+      "scenario": "passing",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-passing-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.1702953999993042,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.17042880000008154
+    },
+    {
+      "condition": "baseline",
+      "scenario": "passing",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-passing-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.14662029999817605,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.14669769999818527
+    },
+    {
+      "condition": "baseline",
+      "scenario": "passing",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-passing-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.15006709999943268,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.1501471000010497
+    },
+    {
+      "condition": "baseline",
+      "scenario": "failure_repair",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.15844600000127684,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-1\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.14596859999801381,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.30569670000113547
+    },
+    {
+      "condition": "baseline",
+      "scenario": "failure_repair",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.16301729999759118,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-2\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.1377481000017724,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.3018004000005021
+    },
+    {
+      "condition": "baseline",
+      "scenario": "failure_repair",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.16219970000020112,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-failure_repair-3\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.1465527000000293,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.3094003000005614
+    },
+    {
+      "condition": "baseline",
+      "scenario": "stale_repair",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.14473290000023553,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.15928939999866998,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-1\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.14554900000075577,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.4513312000017322
+    },
+    {
+      "condition": "baseline",
+      "scenario": "stale_repair",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.14194320000024163,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.1522676999993564,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-2\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.13614550000056624,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.43226200000208337
+    },
+    {
+      "condition": "baseline",
+      "scenario": "stale_repair",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.1589200999987952,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 1,
+          "seconds": 0.16361619999952381,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\baseline-stale_repair-3\\repo with spaces\\verify.py\", line 2, in <module>\n    assert Path('value.txt').read_text() == '2'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "expected_exit": 1
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "verify.py"
+          ],
+          "exit_code": 0,
+          "seconds": 0.13627269999778946,
+          "stdout": "",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 0.46089320000101
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "passing",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8999975000006089,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"42d4d31629d8c5c7524c278b5881aac9\", \"worktree_id\": \"015d4c8308490a7572ff0ad633ded0d343c8152dafad00162efe173df06c51d0\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\state",
+            "complete",
+            "--task",
+            "42d4d31629d8c5c7524c278b5881aac9"
+          ],
+          "exit_code": 4,
+          "seconds": 2.0198531999994884,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"42d4d31629d8c5c7524c278b5881aac9\", \"contract_revision\": 1, \"snapshot_id\": \"5773660d424ff778b66f40e7c6d0bcce2510d32d4af77645cfb842238488eb2c\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"42d4d31629d8c5c7524c278b5881aac9\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\state",
+            "check",
+            "run",
+            "--task",
+            "42d4d31629d8c5c7524c278b5881aac9",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.0494733000014094,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"42d4d31629d8c5c7524c278b5881aac9\", \"runs\": [{\"run_id\": \"a218481c-a7d4-4700-8256-02144eaa7dca\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"4623e1a89480b48950c98310a0dd634f724b929228593410b14dccb14a9ce18d\", \"generation\": \"a9ffde2e708e74617d0a8a1e84246473db809bc449fb9a2821c4186f88b2576b\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1935945000004722, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-1\\state",
+            "complete",
+            "--task",
+            "42d4d31629d8c5c7524c278b5881aac9"
+          ],
+          "exit_code": 0,
+          "seconds": 2.3822222000017064,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"42d4d31629d8c5c7524c278b5881aac9\", \"contract_revision\": 1, \"snapshot_id\": \"5773660d424ff778b66f40e7c6d0bcce2510d32d4af77645cfb842238488eb2c\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"a218481c-a7d4-4700-8256-02144eaa7dca\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"a218481c-a7d4-4700-8256-02144eaa7dca\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 7.351934700000129
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "passing",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8510200999990047,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"7e70d94aa2cd4a25f5a13856b3d95cd9\", \"worktree_id\": \"e136f3575d8c2fb3f9db4a2c26da78908a53c746aeba5c46d7e991659b3d8c3e\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\state",
+            "complete",
+            "--task",
+            "7e70d94aa2cd4a25f5a13856b3d95cd9"
+          ],
+          "exit_code": 4,
+          "seconds": 1.9751142999994045,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"7e70d94aa2cd4a25f5a13856b3d95cd9\", \"contract_revision\": 1, \"snapshot_id\": \"f961cd684141b3d3ce0eaed1164a4f8da00f29cfdbf9873f92721844ed12ad98\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"7e70d94aa2cd4a25f5a13856b3d95cd9\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\state",
+            "check",
+            "run",
+            "--task",
+            "7e70d94aa2cd4a25f5a13856b3d95cd9",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.063382199998159,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"7e70d94aa2cd4a25f5a13856b3d95cd9\", \"runs\": [{\"run_id\": \"2b7a146f-fa24-457f-8d15-9fdabec944da\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"a47eb616ce4bee51382abeea6ac93c2798ebc81caa76ebb37922be8e07fb4241\", \"generation\": \"d51b12c6242832ec01a67466ce050b14af94f0da24080002dbb2f1f25eed708d\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1868219999996654, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-2\\state",
+            "complete",
+            "--task",
+            "7e70d94aa2cd4a25f5a13856b3d95cd9"
+          ],
+          "exit_code": 0,
+          "seconds": 2.579999699999462,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"7e70d94aa2cd4a25f5a13856b3d95cd9\", \"contract_revision\": 1, \"snapshot_id\": \"f961cd684141b3d3ce0eaed1164a4f8da00f29cfdbf9873f92721844ed12ad98\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"2b7a146f-fa24-457f-8d15-9fdabec944da\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"2b7a146f-fa24-457f-8d15-9fdabec944da\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 7.469877999999881
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "passing",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8845093999989331,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"a6b0b940c1087b8bac8bd1d6c9a525d9\", \"worktree_id\": \"44a6f93d46e4f5f11cf9eeab992a0562edc0576065af566b7d71df39b1151b19\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\state",
+            "complete",
+            "--task",
+            "a6b0b940c1087b8bac8bd1d6c9a525d9"
+          ],
+          "exit_code": 4,
+          "seconds": 2.1119681000018318,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"a6b0b940c1087b8bac8bd1d6c9a525d9\", \"contract_revision\": 1, \"snapshot_id\": \"dd7a4eb3d3c2b666b87e3ab4faae922133fedcf214762d415f57e2b1b5c0e0f8\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"a6b0b940c1087b8bac8bd1d6c9a525d9\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\state",
+            "check",
+            "run",
+            "--task",
+            "a6b0b940c1087b8bac8bd1d6c9a525d9",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.091573600002448,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"a6b0b940c1087b8bac8bd1d6c9a525d9\", \"runs\": [{\"run_id\": \"ce5ca2d8-bc44-471f-8e41-4decb97c9168\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"28d354666d907150cacb02cc8e6dea1235e041c7ff15cc248b01d83f56f8f0ac\", \"generation\": \"beaa40e2460b4a73c81febf697203dc24d94955db3f40d9f1678fcaa0b993905\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.194943600003171, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-passing-3\\state",
+            "complete",
+            "--task",
+            "a6b0b940c1087b8bac8bd1d6c9a525d9"
+          ],
+          "exit_code": 0,
+          "seconds": 2.5103592000014032,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"a6b0b940c1087b8bac8bd1d6c9a525d9\", \"contract_revision\": 1, \"snapshot_id\": \"dd7a4eb3d3c2b666b87e3ab4faae922133fedcf214762d415f57e2b1b5c0e0f8\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"ce5ca2d8-bc44-471f-8e41-4decb97c9168\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"ce5ca2d8-bc44-471f-8e41-4decb97c9168\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 7.5987709000000905
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "failure_repair",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.9036257000007026,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"worktree_id\": \"8b3d4aaa1c8aa0b8596df1fd12f5c596ee6d17fb2c265d1f17585a6b6f70b235\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "complete",
+            "--task",
+            "b08990fd42e24066ae4895cdda3bdeda"
+          ],
+          "exit_code": 4,
+          "seconds": 2.0988142999995034,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"contract_revision\": 1, \"snapshot_id\": \"2bfd920e1799783101e984f060924ad8cabdb7aa2d20312c15ec19ee897f397d\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "check",
+            "run",
+            "--task",
+            "b08990fd42e24066ae4895cdda3bdeda",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.063242700001865,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"runs\": [{\"run_id\": \"c800b69e-72cf-47d0-a17d-89d0d0927a69\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"eed5434171761933578c4d90cb90f557c984b55afb87461573aa248942cb342d\", \"generation\": \"a0828473ba368169ed7bdaa997c16a92002c9ca9facb861ee44087bc5ef6f79e\", \"output_digest\": \"314385cd157b4edd7f6ed22088634910fb37ae337c966540e7cccdc0ca64cbaa\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.180824400002166, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "complete",
+            "--task",
+            "b08990fd42e24066ae4895cdda3bdeda"
+          ],
+          "exit_code": 3,
+          "seconds": 2.4743130000024394,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"contract_revision\": 1, \"snapshot_id\": \"2bfd920e1799783101e984f060924ad8cabdb7aa2d20312c15ec19ee897f397d\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"c800b69e-72cf-47d0-a17d-89d0d0927a69\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"c800b69e-72cf-47d0-a17d-89d0d0927a69\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "check",
+            "run",
+            "--task",
+            "b08990fd42e24066ae4895cdda3bdeda",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.09899360000054,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"runs\": [{\"run_id\": \"4cf4ab2b-cc43-40c0-b654-68217dd97e2b\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"97f8074ae23c555fc541642ca2d482bd99246bac735bdfd59aa05291591beadc\", \"generation\": \"6b2b680da4cbad30b0bf6f18934a0a2989da32820b48aeacdd2ad0548797afd1\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1934264000010444, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-1\\state",
+            "complete",
+            "--task",
+            "b08990fd42e24066ae4895cdda3bdeda"
+          ],
+          "exit_code": 0,
+          "seconds": 2.48203310000099,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"b08990fd42e24066ae4895cdda3bdeda\", \"contract_revision\": 1, \"snapshot_id\": \"b20e4462c41268e541001f17929c7ab268a5c12662a1977706bcfba43916aa99\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"4cf4ab2b-cc43-40c0-b654-68217dd97e2b\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"4cf4ab2b-cc43-40c0-b654-68217dd97e2b\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 12.122462700001051
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "failure_repair",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.9220375000004424,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"worktree_id\": \"85e7a463fb18abbc6a2d47a8e6cc8303fbdc604f0d280570a9b88837c404858b\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "complete",
+            "--task",
+            "17179f841c388415c4bddddde111329f"
+          ],
+          "exit_code": 4,
+          "seconds": 2.0872290000006615,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"contract_revision\": 1, \"snapshot_id\": \"af0560f24b70c77e00754ab1cab6f86fd0a4dca4a390c1385ff1b5009fe9eeef\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"17179f841c388415c4bddddde111329f\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "check",
+            "run",
+            "--task",
+            "17179f841c388415c4bddddde111329f",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.1090134999976726,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"runs\": [{\"run_id\": \"41604383-da88-4337-9093-a87722491f01\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"6dc28064aef799d5b0c2fab8baab90b15dcc1d4e01bb413f388cc0a465e42afa\", \"generation\": \"b08f1184856466c3e908bf9b3b8c8557013f8fcaf2e0bb72be7b1f38983a9cbc\", \"output_digest\": \"5a54f7f059ff63a0097e489bd9f186521cd0e17fe6d62310d499d768d1efb0e9\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.184449600001244, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "complete",
+            "--task",
+            "17179f841c388415c4bddddde111329f"
+          ],
+          "exit_code": 3,
+          "seconds": 2.5939761999979964,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"contract_revision\": 1, \"snapshot_id\": \"af0560f24b70c77e00754ab1cab6f86fd0a4dca4a390c1385ff1b5009fe9eeef\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"41604383-da88-4337-9093-a87722491f01\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"41604383-da88-4337-9093-a87722491f01\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"17179f841c388415c4bddddde111329f\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "check",
+            "run",
+            "--task",
+            "17179f841c388415c4bddddde111329f",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.0932286999995995,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"runs\": [{\"run_id\": \"df431052-570e-4d5a-973d-d10f0d919baf\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"3dc46bbe762d76c16ed987304ecf3e8011b19a996dfc498551ff143c7a590506\", \"generation\": \"f9f4640344c42f7e4bf9c2a6d40ea5ccf6d60df565aa621ae8360a41c31dd60d\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.138826300000801, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-2\\state",
+            "complete",
+            "--task",
+            "17179f841c388415c4bddddde111329f"
+          ],
+          "exit_code": 0,
+          "seconds": 2.427425999998377,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"17179f841c388415c4bddddde111329f\", \"contract_revision\": 1, \"snapshot_id\": \"cfe7d94cd1b081400d0ff2f5a7510e42c58c1469c5988b9b0cfcae34c73b6acd\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"df431052-570e-4d5a-973d-d10f0d919baf\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"df431052-570e-4d5a-973d-d10f0d919baf\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 12.234246200001508
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "failure_repair",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8807802999981504,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"worktree_id\": \"469667b065cc1da5a1cdd585def65038fd3f57cb49f7f30f732e3a93e685cd27\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "complete",
+            "--task",
+            "dfb9da08a50464fb59b6e12978a12745"
+          ],
+          "exit_code": 4,
+          "seconds": 2.0821837000003143,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"contract_revision\": 1, \"snapshot_id\": \"7bb5ef714aa5ab31cafa9d143cee92feb1f123083e2a35fe82e96166e3562803\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "check",
+            "run",
+            "--task",
+            "dfb9da08a50464fb59b6e12978a12745",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.1573062000024947,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"runs\": [{\"run_id\": \"8ec11aa5-0a3d-482b-962d-fb67aded9546\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"cb15cf5566167a50dbf8b00c24242ce2760f9a1661889033b821d7e7e0ada9bc\", \"generation\": \"3ed25cc85510ea94727b0b28f61192b2c4e87c0216b8e404e36429eb3d04b38a\", \"output_digest\": \"888406baecea1876d61778aa119a548cf94c7a7a5fe3e08639f19ba075e95bbd\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.227950200001942, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "complete",
+            "--task",
+            "dfb9da08a50464fb59b6e12978a12745"
+          ],
+          "exit_code": 3,
+          "seconds": 2.583959600000526,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"contract_revision\": 1, \"snapshot_id\": \"7bb5ef714aa5ab31cafa9d143cee92feb1f123083e2a35fe82e96166e3562803\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"8ec11aa5-0a3d-482b-962d-fb67aded9546\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"8ec11aa5-0a3d-482b-962d-fb67aded9546\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "check",
+            "run",
+            "--task",
+            "dfb9da08a50464fb59b6e12978a12745",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.1322159999981523,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"runs\": [{\"run_id\": \"c43808ab-5485-4486-8f99-cdf82fb4aa8f\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"a065576a0e1903f76df9a367778f0cb41c80fa95aa1a8100577baaa18cc267e0\", \"generation\": \"db843654b50ca8d9f4c4e2471718cebb2349dd509485ed1564228e60647a1c29\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1851491999987047, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-failure_repair-3\\state",
+            "complete",
+            "--task",
+            "dfb9da08a50464fb59b6e12978a12745"
+          ],
+          "exit_code": 0,
+          "seconds": 2.4641678999978467,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"dfb9da08a50464fb59b6e12978a12745\", \"contract_revision\": 1, \"snapshot_id\": \"1b95989f1a40891f7dd4e24a108c11f04cd430b6e2bf43669133c28c3acd5721\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"c43808ab-5485-4486-8f99-cdf82fb4aa8f\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"c43808ab-5485-4486-8f99-cdf82fb4aa8f\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 12.302028699999937
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "stale_repair",
+      "repetition": 1,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.9071078000015405,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"worktree_id\": \"56a3e9eafa07446701e8dddf437e9e06974a3b98e2266f74bc477c2abe76e644\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "complete",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc"
+          ],
+          "exit_code": 4,
+          "seconds": 2.1001828999978898,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"contract_revision\": 1, \"snapshot_id\": \"ef13cb5f2a35a276e0b88100986942f231a725064f486402e4b1c7c0c2f22773\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "check",
+            "run",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.178884500001004,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"runs\": [{\"run_id\": \"87fdb9ef-56a7-435d-870c-9ec53bd1472a\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"d9d973e5a62007dacf93036548aceed68c07effa1896504a2428e1dead701006\", \"generation\": \"aaaaa80f7b51b01aa7724d22ad536c4a45d9d7056406a01837ddfa38306da426\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.223638799998298, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "complete",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc"
+          ],
+          "exit_code": 0,
+          "seconds": 2.479608300000109,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"contract_revision\": 1, \"snapshot_id\": \"ef13cb5f2a35a276e0b88100986942f231a725064f486402e4b1c7c0c2f22773\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"87fdb9ef-56a7-435d-870c-9ec53bd1472a\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"87fdb9ef-56a7-435d-870c-9ec53bd1472a\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "complete",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc"
+          ],
+          "exit_code": 4,
+          "seconds": 2.5122033999978157,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"contract_revision\": 1, \"snapshot_id\": \"8caed99c4d74904a2c2a83a312826e71b50da69c09f2fbaa73b620098465cffb\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [\"87fdb9ef-56a7-435d-870c-9ec53bd1472a\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [\"87fdb9ef-56a7-435d-870c-9ec53bd1472a\"], \"reason\": \"STALE_OR_UNAVAILABLE\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "check",
+            "run",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.090969500000938,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"runs\": [{\"run_id\": \"e39cb6e4-c3d1-4b9b-9a97-b0d85c23b6b5\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"8542c870e4b97a687990d87ab35bc4e189c296d8d3165ba558c670e15fe457b7\", \"generation\": \"99c2841b8d6cc61cdc04a3f8c0e0da7c13372d587cfd057420496e643a049299\", \"output_digest\": \"0e3fd2db1659a568613d9d664da4f3bc711f8c80ed8ec18ba8bc969fec0fcf0c\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.1853273000015179, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "complete",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc"
+          ],
+          "exit_code": 3,
+          "seconds": 2.4751555000002554,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"contract_revision\": 1, \"snapshot_id\": \"8caed99c4d74904a2c2a83a312826e71b50da69c09f2fbaa73b620098465cffb\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"e39cb6e4-c3d1-4b9b-9a97-b0d85c23b6b5\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"e39cb6e4-c3d1-4b9b-9a97-b0d85c23b6b5\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "check",
+            "run",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc",
+            "--request-id",
+            "check-3",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.0467690999976185,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"runs\": [{\"run_id\": \"97ed6a0d-8e0e-46b0-a9d2-45e6b60fb8ce\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"d9d973e5a62007dacf93036548aceed68c07effa1896504a2428e1dead701006\", \"generation\": \"804251a93a6d655d961dff14c11f6c2685ea821fdcb6b87e93cf411b0f2bf7cd\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1492603000006056, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-1\\state",
+            "complete",
+            "--task",
+            "2bcbbbe714a94326fe9cf690cd8ad5fc"
+          ],
+          "exit_code": 0,
+          "seconds": 2.527926499999012,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"2bcbbbe714a94326fe9cf690cd8ad5fc\", \"contract_revision\": 1, \"snapshot_id\": \"ef13cb5f2a35a276e0b88100986942f231a725064f486402e4b1c7c0c2f22773\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"97ed6a0d-8e0e-46b0-a9d2-45e6b60fb8ce\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"97ed6a0d-8e0e-46b0-a9d2-45e6b60fb8ce\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 19.321254399997997
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "stale_repair",
+      "repetition": 2,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8754425999977684,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"worktree_id\": \"ffb79dbd2a10ae56576c747633709d6cc14035ee84590c5edb77036f6b651e59\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "complete",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456"
+          ],
+          "exit_code": 4,
+          "seconds": 2.036220999998477,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"contract_revision\": 1, \"snapshot_id\": \"c993d9b7e855abda822e5792a9f21aff8b7ee11c8e9614d17daa16eecf70d87b\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "check",
+            "run",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.088509699999122,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"runs\": [{\"run_id\": \"3d265927-6e0c-424b-8b09-144eee9bbe05\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"4cf93dc6970a4e343f5ba190ebd4cd470b916450e3a4492fe9b067e8dce28bcd\", \"generation\": \"28e9d04fd5e27a155ec88d926e7623544e5bc1a1209ea8efbf62492904326209\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1887571000006574, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "complete",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456"
+          ],
+          "exit_code": 0,
+          "seconds": 2.462675599999784,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"contract_revision\": 1, \"snapshot_id\": \"c993d9b7e855abda822e5792a9f21aff8b7ee11c8e9614d17daa16eecf70d87b\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"3d265927-6e0c-424b-8b09-144eee9bbe05\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"3d265927-6e0c-424b-8b09-144eee9bbe05\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "complete",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456"
+          ],
+          "exit_code": 4,
+          "seconds": 2.436427399999957,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"contract_revision\": 1, \"snapshot_id\": \"00a93327a3c76ce75055952b7ee9459406b8be9aee8fc3ccffaf7b243966a046\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [\"3d265927-6e0c-424b-8b09-144eee9bbe05\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [\"3d265927-6e0c-424b-8b09-144eee9bbe05\"], \"reason\": \"STALE_OR_UNAVAILABLE\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "check",
+            "run",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.059533999999985,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"runs\": [{\"run_id\": \"f9d388c3-8ecb-4616-89f0-4311063d327e\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"e773ed59be5df04c2b51861b6daf68e32eca0fb552a2e25e803ba37201fb270d\", \"generation\": \"5200605dda9392b5343f536ce32716fe3e54022fdb7418a30832186bba1b7fde\", \"output_digest\": \"3c5c4722dff9146e26608e348ad192093d4d3a43362b138fbc5a887d526bd731\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.166543899998942, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "complete",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456"
+          ],
+          "exit_code": 3,
+          "seconds": 2.4518441000000166,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"contract_revision\": 1, \"snapshot_id\": \"00a93327a3c76ce75055952b7ee9459406b8be9aee8fc3ccffaf7b243966a046\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"f9d388c3-8ecb-4616-89f0-4311063d327e\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"f9d388c3-8ecb-4616-89f0-4311063d327e\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "check",
+            "run",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456",
+            "--request-id",
+            "check-3",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.1219143999987864,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"runs\": [{\"run_id\": \"3bbb366e-7d49-48f8-9cb4-d5f0fdb892dd\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"4cf93dc6970a4e343f5ba190ebd4cd470b916450e3a4492fe9b067e8dce28bcd\", \"generation\": \"3f8ea4417452c9f5a9bebaafd99b9e1650b916b3462d58449b8095312050e528\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.1888820000021951, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-2\\state",
+            "complete",
+            "--task",
+            "8beed338e6f96cbd870c7cc294d4b456"
+          ],
+          "exit_code": 0,
+          "seconds": 2.4430150000007416,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"8beed338e6f96cbd870c7cc294d4b456\", \"contract_revision\": 1, \"snapshot_id\": \"c993d9b7e855abda822e5792a9f21aff8b7ee11c8e9614d17daa16eecf70d87b\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"3bbb366e-7d49-48f8-9cb4-d5f0fdb892dd\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"3bbb366e-7d49-48f8-9cb4-d5f0fdb892dd\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 18.97822079999969
+    },
+    {
+      "condition": "checkpoint",
+      "scenario": "stale_repair",
+      "repetition": 3,
+      "fixture": "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3",
+      "acceptance_argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "verify.py"
+      ],
+      "verify_sha256": "4ed61ac602ede30835da6d9cecc1d602ad10c4c5bd995fbaaf944c6b57f7833c",
+      "attempts": [
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "task",
+            "start",
+            "--request-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\request.txt",
+            "--contract-file",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\contract.json",
+            "--request-id",
+            "start"
+          ],
+          "exit_code": 0,
+          "seconds": 0.8442364000002271,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"worktree_id\": \"9e26cb6453afdb5f6f076e779a88568f315ae42c883e716523ef8d9b782360c1\", \"request\": \"Make the synthetic value equal two.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"value\", \"text\": \"Value is two\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"acceptance\"]}], \"required_check_ids\": [\"acceptance\"], \"scope_exclude\": [], \"policy_digest\": \"760483a43230e7caefb62d9e60bc21668ea4ccfd84ec704b3356464ab3414957\"}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "complete",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678"
+          ],
+          "exit_code": 4,
+          "seconds": 2.071423000001232,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"contract_revision\": 1, \"snapshot_id\": \"51bae2d33261031056010f30abf49584bd0f2647d7bd658e1426548385ea3c8a\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "check",
+            "run",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678",
+            "--request-id",
+            "check-1",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.161914299998898,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"runs\": [{\"run_id\": \"bc265779-a34f-4012-9356-ecb21b3252e6\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"b00e144b6ad9fadc94d8a78c65d2916f301467b8fccce24de723bcce9d69d304\", \"generation\": \"79bece337e85b436705f3cbbe90e1b7d3df509cf4c3823671c8ac12d4e92f16f\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.2435919999988982, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "complete",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678"
+          ],
+          "exit_code": 0,
+          "seconds": 2.466983899998013,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"contract_revision\": 1, \"snapshot_id\": \"51bae2d33261031056010f30abf49584bd0f2647d7bd658e1426548385ea3c8a\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"bc265779-a34f-4012-9356-ecb21b3252e6\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"bc265779-a34f-4012-9356-ecb21b3252e6\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "complete",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678"
+          ],
+          "exit_code": 4,
+          "seconds": 2.4277049000011175,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"contract_revision\": 1, \"snapshot_id\": \"457eef61c69b7ba5f39eb8124a4e94e748a351e78601e012efef3e63055325b2\", \"status\": \"unresolved\", \"criteria\": [{\"id\": \"value\", \"status\": \"unknown\", \"evidence_ids\": [\"bc265779-a34f-4012-9356-ecb21b3252e6\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"unknown\", \"evidence_ids\": [\"bc265779-a34f-4012-9356-ecb21b3252e6\"], \"reason\": \"STALE_OR_UNAVAILABLE\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\"}]}\n",
+          "stderr": "",
+          "expected_exit": 4
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "check",
+            "run",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678",
+            "--request-id",
+            "check-2",
+            "acceptance"
+          ],
+          "exit_code": 3,
+          "seconds": 2.030308100002003,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"runs\": [{\"run_id\": \"9d44a858-e1c0-4a0d-acb6-2fd60444ad1e\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"fail\", \"reason\": \"\", \"snapshot_id\": \"bbf79dc561c9b9074ec617859fa9ee280bfda71bac87bc5724159f03bd88bf5e\", \"generation\": \"94ec37ca9674d45d550adf88d87d41ce889fda3ccca2c144504dfb1d72827546\", \"output_digest\": \"6a732c2ff3f7078786c11ad3c0ec1f8bbb7b6fd0420902f95934e5daa2f9ca2f\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 1, \"duration_seconds\": 1.1519576999999117, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "complete",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678"
+          ],
+          "exit_code": 3,
+          "seconds": 2.4320430000007036,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"contract_revision\": 1, \"snapshot_id\": \"457eef61c69b7ba5f39eb8124a4e94e748a351e78601e012efef3e63055325b2\", \"status\": \"needs_changes\", \"criteria\": [{\"id\": \"value\", \"status\": \"fail\", \"evidence_ids\": [\"9d44a858-e1c0-4a0d-acb6-2fd60444ad1e\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"fail\", \"evidence_ids\": [\"9d44a858-e1c0-4a0d-acb6-2fd60444ad1e\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": [{\"type\": \"inspect_required_evidence\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\"}]}\n",
+          "stderr": "",
+          "expected_exit": 3
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "check",
+            "run",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678",
+            "--request-id",
+            "check-3",
+            "acceptance"
+          ],
+          "exit_code": 0,
+          "seconds": 2.0185338000010233,
+          "stdout": "{\"status\": \"completed\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"runs\": [{\"run_id\": \"d2256a7e-deb6-4b87-90a9-b780011aa152\", \"check_id\": \"acceptance\", \"contract_revision\": 1, \"phase\": \"finished\", \"status\": \"pass\", \"reason\": \"\", \"snapshot_id\": \"b00e144b6ad9fadc94d8a78c65d2916f301467b8fccce24de723bcce9d69d304\", \"generation\": \"ce81682f79b04fb69b41e278f0d182ec89e13a850d0b452c3c93f8171db41f74\", \"output_digest\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"definition_digest\": \"97e7f6854f6258d16b985d30cc0967c713b6c871ef0a27ec6a27a6ed3d2d15b5\", \"exit_code\": 0, \"duration_seconds\": 1.129071400002431, \"execution_mode\": \"working_tree\"}]}\n",
+          "stderr": "",
+          "expected_exit": 0
+        },
+        {
+          "argv": [
+            "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+            "-I",
+            "-m",
+            "agent_checkpoint",
+            "--root",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\repo with spaces",
+            "--state",
+            "C:\\Users\\juanf\\AppData\\Local\\Temp\\checkpoint-comparison-mj95rw7f\\checkpoint-stale_repair-3\\state",
+            "complete",
+            "--task",
+            "563e906ba9266fbc2e9b405e69506678"
+          ],
+          "exit_code": 0,
+          "seconds": 2.344651300001715,
+          "stdout": "{\"schema_version\": \"1\", \"task_id\": \"563e906ba9266fbc2e9b405e69506678\", \"contract_revision\": 1, \"snapshot_id\": \"51bae2d33261031056010f30abf49584bd0f2647d7bd658e1426548385ea3c8a\", \"status\": \"ready\", \"criteria\": [{\"id\": \"value\", \"status\": \"pass\", \"evidence_ids\": [\"d2256a7e-deb6-4b87-90a9-b780011aa152\"], \"reason\": \"\"}], \"required_checks\": [{\"id\": \"acceptance\", \"status\": \"pass\", \"evidence_ids\": [\"d2256a7e-deb6-4b87-90a9-b780011aa152\"], \"reason\": \"\"}], \"automatic_continuation_eligible\": false, \"advisory_findings\": [], \"next_actions\": []}\n",
+          "stderr": "",
+          "expected_exit": 0
+        }
+      ],
+      "provider_requests": 0,
+      "provider_retries": 0,
+      "tokens": null,
+      "billed_usd": null,
+      "outcome": "pass",
+      "workflow_seconds": 18.800589900001796
+    }
+  ],
+  "summary": {
+    "passing": {
+      "baseline": 0.1501471000010497,
+      "checkpoint": 7.469877999999881,
+      "overhead_seconds": 7.319730899998831
+    },
+    "failure_repair": {
+      "baseline": 0.30569670000113547,
+      "checkpoint": 12.234246200001508,
+      "overhead_seconds": 11.928549500000372
+    },
+    "stale_repair": {
+      "baseline": 0.4513312000017322,
+      "checkpoint": 18.97822079999969,
+      "overhead_seconds": 18.526889599997958
+    }
+  }
+}

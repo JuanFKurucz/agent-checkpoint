@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "init",
+        "--quiet",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.1375999000010779,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "sync",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 6.377447899998515,
+      "stdout": "",
+      "stderr": "Using CPython 3.13.11\nCreating virtual environment at: .venv\nResolved 50 packages in 2ms\n   Building agent-checkpoint @ file:///C:/Users/juanf/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/agent-checkpoint/self-use/promotion-drill-0.1.1-retry1/source/agent_checkpoint-0.1.1\n      Built agent-checkpoint @ file:///C:/Users/juanf/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/agent-checkpoint/self-use/promotion-drill-0.1.1-retry1/source/agent_checkpoint-0.1.1\nPrepared 1 package in 2.28s\nwarning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.\n         If the cache and target directories are on different filesystems, hardlinking may not be supported.\n         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.\nInstalled 49 packages in 3.60s\n + agent-checkpoint==0.1.1 (from file:///C:/Users/juanf/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/agent-checkpoint/self-use/promotion-drill-0.1.1-retry1/source/agent_checkpoint-0.1.1)\n + annotated-types==0.8.0\n + anyio==4.15.1\n + ast-serialize==0.11.2\n + attrs==26.1.0\n + build==1.6.1\n + cffi==2.1.1\n + click==8.5.0\n + colorama==0.4.6\n + coverage==7.16.2\n + cryptography==50.0.1\n + h11==0.16.0\n + httpcore2==2.13.1\n + httpx2==2.13.1\n + idna==3.20\n + iniconfig==2.3.0\n + jsonschema==4.26.0\n + jsonschema-specifications==2025.9.1\n + librt==0.15.0\n + mcp==2.2.0\n + mcp-types==2.2.0\n + mypy==2.3.1\n + mypy-extensions==1.1.0\n + opentelemetry-api==1.45.0\n + packaging==26.3\n + pathspec==1.1.1\n + pluggy==1.6.0\n + pycparser==3.0\n + pydantic==2.13.5\n + pydantic-core==2.46.5\n + pygments==2.21.0\n + pyjwt==2.15.0\n + pyproject-hooks==1.3.3\n + pytest==9.1.1\n + pytest-cov==7.1.0\n + pytest-socket==0.8.1\n + python-multipart==0.0.32\n + pywin32==312\n + referencing==0.37.0\n + rpds-py==2026.6.3\n + ruff==0.16.9\n + sse-starlette==3.4.11\n + starlette==1.7.0\n + tenacity==9.1.4\n + truststore==0.10.4\n + typesafe-sdk==0.7.2\n + typing-extensions==4.16.0\n + typing-inspection==0.4.4\n + uvicorn==0.54.0\n"
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 1.216884299999947,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.1339492999977665,
+      "stdout": "25 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev",
+        "mypy"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 11.388827999999194,
+      "stdout": "Success: no issues found in 13 source files\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev",
+        "pytest",
+        "-q"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 141.0244473999992,
+      "stdout": "........................................................................ [ 80%]\n.................                                                        [100%]\n89 passed in 137.92s (0:02:17)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "-c",
+        "import sysconfig; print(sysconfig.get_path('purelib'))"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.1540528000004997,
+      "stdout": "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Lib\\site-packages\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\build-83114bf8\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "agent_checkpoint",
+        "--root",
+        "D:\\Programming\\agent-checkpoint",
+        "--state",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\backup-state",
+        "task",
+        "show",
+        "573bdefdea3467f9ad4b3e8cae766fbc"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.9916072000014537,
+      "stdout": "{\"schema_version\": \"1\", \"task_id\": \"573bdefdea3467f9ad4b3e8cae766fbc\", \"worktree_id\": \"f79149ba604e484ba223e88c9e046a41110c4b093a43d1e7db6cb79698687a6c\", \"request\": \"Bound Jev gateway response memory before parsing. Reject oversized streamed bodies\\nand unsupported compression, close the response on every path, preserve the total\\ndeadline and physical-call accounting, and prove no retry or alternate destination\\nis used. Keep all automated tests offline.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"bounded-response\", \"text\": \"Oversized streamed Jev responses are rejected before unbounded buffering or parsing\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}, {\"id\": \"cleanup-accounting\", \"text\": \"Failure closes the stream, charges one physical request and never retries or changes endpoint\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}], \"required_check_ids\": [\"lint\", \"format\", \"types\", \"tests\"], \"scope_exclude\": [], \"policy_digest\": \"87e70fe88fcfeae54f9832157ac9341fd1690d5af2edbd2ed4564ec1d543f0c9\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "agent_checkpoint",
+        "--root",
+        "D:\\Programming\\agent-checkpoint",
+        "--state",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\candidate-state",
+        "task",
+        "show",
+        "573bdefdea3467f9ad4b3e8cae766fbc"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.9347879000015382,
+      "stdout": "{\"schema_version\": \"1\", \"task_id\": \"573bdefdea3467f9ad4b3e8cae766fbc\", \"worktree_id\": \"f79149ba604e484ba223e88c9e046a41110c4b093a43d1e7db6cb79698687a6c\", \"request\": \"Bound Jev gateway response memory before parsing. Reject oversized streamed bodies\\nand unsupported compression, close the response on every path, preserve the total\\ndeadline and physical-call accounting, and prove no retry or alternate destination\\nis used. Keep all automated tests offline.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"bounded-response\", \"text\": \"Oversized streamed Jev responses are rejected before unbounded buffering or parsing\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}, {\"id\": \"cleanup-accounting\", \"text\": \"Failure closes the stream, charges one physical request and never retries or changes endpoint\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}], \"required_check_ids\": [\"lint\", \"format\", \"types\", \"tests\"], \"scope_exclude\": [], \"policy_digest\": \"87e70fe88fcfeae54f9832157ac9341fd1690d5af2edbd2ed4564ec1d543f0c9\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\candidate-0.1.1\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "agent_checkpoint",
+        "--root",
+        "D:\\Programming\\agent-checkpoint",
+        "--state",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\broken-state",
+        "task",
+        "show",
+        "573bdefdea3467f9ad4b3e8cae766fbc"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 5,
+      "expected_exit": 5,
+      "seconds": 0.8980504000028304,
+      "stdout": "{\"status\": \"error\", \"code\": \"STORAGE_UNAVAILABLE\"}\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "uv",
+        "run",
+        "--locked",
+        "--offline",
+        "--extra",
+        "jev",
+        "pytest",
+        "-q",
+        "tests/test_contracts.py",
+        "tests/test_service.py"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 28.411453400000028,
+      "stdout": "........................                                                 [100%]\n24 passed in 27.02s\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "C:\\Users\\juanf\\AppData\\Local\\agent-checkpoint\\self-use\\build-83114bf8\\venv\\Scripts\\python.exe",
+        "-I",
+        "-m",
+        "agent_checkpoint",
+        "--root",
+        "D:\\Programming\\agent-checkpoint",
+        "--state",
+        "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\rollback-state",
+        "task",
+        "show",
+        "573bdefdea3467f9ad4b3e8cae766fbc"
+      ],
+      "cwd": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1",
+      "exit_code": 0,
+      "expected_exit": 0,
+      "seconds": 0.8534284000015759,
+      "stdout": "{\"schema_version\": \"1\", \"task_id\": \"573bdefdea3467f9ad4b3e8cae766fbc\", \"worktree_id\": \"f79149ba604e484ba223e88c9e046a41110c4b093a43d1e7db6cb79698687a6c\", \"request\": \"Bound Jev gateway response memory before parsing. Reject oversized streamed bodies\\nand unsupported compression, close the response on every path, preserve the total\\ndeadline and physical-call accounting, and prove no retry or alternate destination\\nis used. Keep all automated tests offline.\", \"contract_revision\": 1, \"criteria\": [{\"id\": \"bounded-response\", \"text\": \"Oversized streamed Jev responses are rejected before unbounded buffering or parsing\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}, {\"id\": \"cleanup-accounting\", \"text\": \"Failure closes the stream, charges one physical request and never retries or changes endpoint\", \"origin\": \"user\", \"required\": true, \"evidence_policy\": \"mechanical\", \"satisfaction_rule\": \"approved_checks\", \"check_ids\": [\"tests\"]}], \"required_check_ids\": [\"lint\", \"format\", \"types\", \"tests\"], \"scope_exclude\": [], \"policy_digest\": \"87e70fe88fcfeae54f9832157ac9341fd1690d5af2edbd2ed4564ec1d543f0c9\"}\n",
+      "stderr": ""
+    }
+  ],
+  "active_state_modified": false,
+  "real_launcher_modified": false,
+  "promotion_gate": "independent direct checks and installed-file hashes",
+  "candidate_ready_used_as_gate": false,
+  "wheel_sha256": "8b4d2db9a124117a6e91e6b1248c16481f6d57d65934af0cd2114bf16bb7b33e",
+  "source_sha256": "265e0e1fb13eb0b8179b4209a16dc7ecea70bb8aa2cd843ea1cbbae406322018",
+  "isolated_source": "C:\\Users\\juanf\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\agent-checkpoint\\self-use\\promotion-drill-0.1.1-retry1\\source\\agent_checkpoint-0.1.1",
+  "installed_python_files_verified": 13,
+  "state_backup": {
+    "tasks": [
+      "573bdefdea3467f9ad4b3e8cae766fbc",
+      "9f8941309f492a5bcea4818e78b22d04",
+      "b815f3c9f197edfcf8b324ba8d08715a"
+    ],
+    "events": 33,
+    "blobs": 9
+  },
+  "promotion": "candidate selected; copied contract preserved",
+  "failure_injection": {
+    "status": "error",
+    "code": "STORAGE_UNAVAILABLE"
+  },
+  "manual_disable": "drill launcher disabled; direct command passed",
+  "rollback": "baseline artifact and backup-derived state restored"
+}
