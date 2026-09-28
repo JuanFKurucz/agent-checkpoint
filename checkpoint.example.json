@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "mode": "advise",
+  "checks": {
+    "lint": {
+      "argv": ["uv", "run", "--locked", "--offline", "--extra", "jev", "ruff", "check", "src", "tests", "scripts"],
+      "envAllow": ["UV_CACHE_DIR"],
+      "required": true,
+      "timeoutSeconds": 120
+    },
+    "format": {
+      "argv": ["uv", "run", "--locked", "--offline", "--extra", "jev", "ruff", "format", "--check", "src", "tests", "scripts"],
+      "envAllow": ["UV_CACHE_DIR"],
+      "required": true,
+      "timeoutSeconds": 120
+    },
+    "types": {
+      "argv": ["uv", "run", "--locked", "--offline", "--extra", "jev", "mypy"],
+      "envAllow": ["UV_CACHE_DIR"],
+      "required": true,
+      "timeoutSeconds": 120
+    },
+    "tests": {
+      "argv": ["uv", "run", "--locked", "--offline", "--extra", "jev", "pytest", "-q"],
+      "envAllow": ["UV_CACHE_DIR"],
+      "required": true,
+      "timeoutSeconds": 240,
+      "maxOutputBytes": 65536
+    }
+  },
+  "skills": {
+    "repository-invariants": {
+      "description": "Preserve authority, privacy, freshness and recovery invariants.",
+      "mandatory": true
+    }
+  },
+  "provider": {
+    "enabled": false,
+    "remoteAllowed": false,
+    "spendAcknowledged": false,
+    "maxCallsPerTask": 6,
+    "maxInputBytes": 16384,
+    "timeoutSeconds": 10
+  }
+}
